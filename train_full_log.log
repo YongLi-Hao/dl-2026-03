@@ -1,0 +1,17 @@
+[34m[1mtrain: [0mweights='', cfg=, data=../neu_det.yaml, hyp=data\hyps\hyp.scratch-low.yaml, epochs=100, batch_size=4, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, noplots=False, evolve=None, evolve_population=data\hyps, resume_evolve=None, bucket=, cache=None, image_weights=False, device=0, multi_scale=False, single_cls=False, optimizer=SGD, sync_bn=False, workers=8, project=../train_results, name=neu_det_exp, exist_ok=False, quad=False, cos_lr=False, label_smoothing=0.0, patience=100, freeze=[0], save_period=10, seed=0, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest, ndjson_console=False, ndjson_file=False
+YOLOv5  2026-4-20 Python-3.10.20 torch-2.5.1 CUDA:0 (NVIDIA GeForce RTX 5070 Laptop GPU, 8151MiB)
+
+[34m[1mhyperparameters: [0mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+[34m[1mComet: [0mrun 'pip install comet_ml' to automatically track and visualize YOLOv5  runs in Comet
+[34m[1mTensorBoard: [0mStart with 'tensorboard --logdir ..\train_results', view at http://localhost:6006/
+[34m[1mgithub: [0mskipping check (not a git repository), for updates see https://github.com/ultralytics/yolov5
+Traceback (most recent call last):
+  File "C:\Users\passionate\dl-2026-03\yolov5\train.py", line 987, in <module>
+    main(opt)
+  File "C:\Users\passionate\dl-2026-03\yolov5\train.py", line 688, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\Users\passionate\dl-2026-03\yolov5\train.py", line 225, in train
+    model = Model(cfg, ch=3, nc=nc, anchors=hyp.get("anchors")).to(device)  # create
+  File "C:\Users\passionate\dl-2026-03\yolov5\models\yolo.py", line 230, in __init__
+    with open(cfg, encoding="ascii", errors="ignore") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''

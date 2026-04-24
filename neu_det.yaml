@@ -1,0 +1,10 @@
+# 数据集路径
+train: C:/Users/passionate/dl-2026-03/neu_det_yolo/images/train
+val: C:/Users/passionate/dl-2026-03/neu_det_yolo/images/val
+test: C:/Users/passionate/dl-2026-03/neu_det_yolo/images/test
+
+# 类别数量
+nc: 6
+
+# 类别名称（与CLASS_MAP完全对应）
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scale', 'scratches']
